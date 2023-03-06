@@ -1,0 +1,29 @@
+@import "variables";
+@import "sensors";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  background-color: $color-bg;
+}
+
+.btn {
+  background-color: $color-two;
+  &:hover, &:focus {
+    background-color: $color-two-light;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
